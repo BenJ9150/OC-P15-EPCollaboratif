@@ -21,6 +21,7 @@ jobs:
           destination: 'platform=iOS Simulator,name=iPhone 14'
           action: test
           result-bundle-path: 'TestResults/TestResults.xcresult'
+          args: CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
       - name: Process Test Results
         uses: kishikawakatsumi/xcresulttool@v1
